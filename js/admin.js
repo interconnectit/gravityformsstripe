@@ -30,6 +30,9 @@ window.GFStripeAdmin = null;
 
             this.maybeLockAccountSettings();
             this.bindWebhookAlert();
+
+            this.bindRefund();
+            this.bindCapture();
         }
 
         this.validateKey = function(keyName, key){
@@ -195,7 +198,7 @@ window.GFStripeAdmin = null;
                                 alert(response.data.message);
                             }
 
-                            $button.removeAttr('disabled');
+                            deauthButton.removeAttr('disabled');
                         }
                     });
                 }
@@ -256,7 +259,7 @@ window.GFStripeAdmin = null;
 
             // Use the built-in "beforeunload" event to throw the confirmation when redirecting.
             window.addEventListener('beforeunload', function (e) {
-                if ( self.accountSettingsLocked || $('.error.below-h2').length ) {
+                if ( self.accountSettingsLocked ) {
                     // Cancel the event
                     e.preventDefault();
                     // Chrome requires returnValue to be set
@@ -274,6 +277,126 @@ window.GFStripeAdmin = null;
                 }, 1000);
             }
         }
+
+
+        /**
+         * Handles refund button click and sends a refund ajax request.
+         *
+         * @since 1.3 //@todo - version
+         */
+        this.bindRefund = function() {
+            $( '.stripe-refund' ).on(
+                'click',
+                function( e ) {
+                    e.preventDefault();
+                    var refundButton = $( '.stripe_refund' ),
+                        refundWaitContainer = $( '#refund_wait_container' ),
+                        transactionId = $( this ).data( 'tid' );
+                        entryId = $( this ).data( 'lid' );
+                    if ( ! window.confirm( gforms_stripe_admin_strings.refund ) ) {
+                        return false;
+                    }
+
+                    // Set disabled state.
+                    refundButton.prop( 'disabled', true );
+                    refundWaitContainer.fadeIn();
+                    wp.a11y.speak( gforms_stripe_admin_strings.refund_processing, 'assertive' );
+
+                    $.ajax(
+                        {
+                            async: true,
+                            url: ajaxurl,
+                            dataType: 'json',
+                            method: 'POST',
+                            data: {
+                                action: 'gfstripe_refund',
+                                transaction_id: transactionId,
+                                entry_id: entryId,
+                                nonce: gforms_stripe_admin_strings.refund_nonce,
+                            },
+                            success: function( response ) {
+                                if ( response.success ) {
+                                    window.location.reload();
+                                } else {
+                                    wp.a11y.speak( response.data.message, 'assertive' );
+                                    $( '.gform_stripe_refund_alert' ).show().html( response.data.message );
+                                }
+                            },
+                            complete: function() {
+                                wp.a11y.speak( gforms_stripe_admin_strings.refund_complete, 'assertive' );
+                                refundButton.prop( 'disabled', false );
+                                refundWaitContainer.hide();
+                            },
+                        }
+                    ).fail(
+                        function( jqXHR, textStatus, error ) {
+                            window.alert( error );
+                            refundButton.prop( 'disabled', false );
+                            refundWaitContainer.hide();
+                        }
+                    );
+                }
+            );
+        };
+
+		this.bindCapture = function() {
+			$( '.stripe-capture' ).on( 'click keypress',
+				function( e ) {
+
+					e.preventDefault();
+
+					var captureButton = $( '.stripe-capture' ),
+                        captureWaitContainer = $( '#capture_wait_container' );
+						errorContainer = $( '.gform_stripe_capture_alert' );
+
+					if ( ! window.confirm( gforms_stripe_admin_strings.capture_confirm ) ) {
+						return false;
+					}
+
+					// Set disabled state
+					captureWaitContainer.fadeIn();
+					captureButton.prop( 'disabled', true );
+					errorContainer.hide();
+					wp.a11y.speak( gforms_stripe_admin_strings.capture_processing, 'assertive' );
+
+					var requestData = captureButton.data( 'ajax' );
+
+					$.ajax( {
+						url: ajaxurl,
+						method: 'POST',
+						data: {
+							action: 'gfstripe_capture_action',
+							transaction_id: requestData.transaction_id,
+							entry_id: requestData.entry_id,
+							nonce: requestData.nonce,
+						},
+						success: function( response ) {
+
+							if ( response.success ) {
+								wp.a11y.speak( gforms_stripe_admin_strings.capture_complete, 'assertive' );
+								// Success. Reload page.
+								window.location.reload();
+							} else {
+								wp.a11y.speak( response.data, 'assertive' );
+                                errorContainer.show().html( response.data );
+
+                                captureButton.prop( 'disabled', false );
+                                captureWaitContainer.hide();
+							}
+						}
+					}
+					).fail(
+						function( jqXHR, textStatus, error ) {
+							wp.a11y.speak( error, 'assertive' );
+							errorContainer.show().html( error );
+
+							captureButton.prop( 'disabled', false );
+							captureWaitContainer.hide();
+						}
+					);
+				}
+			);
+        };
 
         this.init();
     };

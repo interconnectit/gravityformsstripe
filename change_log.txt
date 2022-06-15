@@ -1,7 +1,19 @@
-### 4.1.1
-- Updated the stripe API SDK methods.
+### 4.2.1
+- Fixed a fatal error which can occur with the Stripe API Client if the add-on isn't connected to a Stripe account.
+
+
+### 4.2 | 2022-02-03
+- Added security enhancements.
+- Added the ability to refund payments from the entry detail page.
+- Added the ability to capture authorized payments from the entry detail page.
+- Added the stripe_customer_portal_link shortcode action to support [self-serve billing portal](https://docs.gravityforms.com/stripe-customer-portal-shortcode-action/).
+- Updated the Stripe API SDK methods.
 - Updated the styling for the disconnect alert messaging.
-- Fixed an issue where if future usage is set to 'on_session' and a user enters a 3DS card, they get an infinite loop and can't submit the form.
+- Fixed a javascript error when de-authorizing Stripe account.
+- Fixed an issue with unsaved warning being displayed on settings pages even when there are no changes made.
+- Fixed an issue with the Webhooks Add-On where the payment details in the entry are empty.
+- Fixed an issue where if future usage is set to 'on_session' and a user enters a 3DS card.  This addresses an issue that results in an infinite loop on form submission.
+
 
 ### 4.1 | 2021-06-30
 - Updated error messages when API isn't connected to be more informative.
@@ -10,6 +22,7 @@
 - Fixed an issue where an empty validation message appears as soon as a customer types in the credit card field.
 - Fixed an issue where the credit card icon overlaps with the placeholder text in the credit card field.
 - Fixed an issue where the form fails validation if the plan (price) or product, created by the add-on, is archived in the Stripe account.
+
 
 ### 4.0 | 2021-04-21
 - Added a warning notice when deprecated credit card field is still being used.
@@ -28,7 +41,6 @@
 - Fixed an issue where multiple feed specific callbacks can be processed for an entry at the same time.
 - Fixed an issue where an empty validation error can be applied to the Stripe Card field when some Stripe API errors occur.
 - Fixed an issue with the Stripe card field preview in the form editor.
-
 
 
 ### 3.8 | 2020-09-28
