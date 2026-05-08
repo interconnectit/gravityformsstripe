@@ -154,6 +154,12 @@ class GF_Payment_Element_Payment {
 		$feed = $this->addon->get_feed( $feed_id );
 		$form = GFAPI::get_form( $form_id );
 
+		if ( method_exists( 'GFCommon', 'get_submission_currency' ) ) {
+		    $currency = GFCommon::get_submission_currency();
+		} else {
+		    $currency = $this->currency;
+		}
+
 		if ( $entry === null ) {
 			$temp_entry = isset( $order_data['temp_lead'] ) ? $order_data['temp_lead'] : $order_data;
 		} else {
@@ -177,8 +183,8 @@ class GF_Payment_Element_Payment {
 		);
 
 		$intent_meta['customer']       = $this->get_customer( $feed, $form, $api, $temp_entry );
-		$intent_meta['amount']         = $this->addon->get_amount_export( $amount, $this->currency );
-		$intent_meta['currency']       = strtolower( $this->currency );
+		$intent_meta['amount']         = $this->addon->get_amount_export( $amount, $currency );
+		$intent_meta['currency']       = strtolower( $currency );
 		$intent_meta['capture_method'] = $this->addon->get_payment_element_capture_method( $form, $feed );
 
 		// Run intent meta through product payment data filter.

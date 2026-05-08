@@ -1,3 +1,19 @@
+### 6.0.3 | 2026-01-22
+- Fixed a bug that prevents the Card Element field from functioning when it is in a section that has been revealed by conditional logic.
+- Fixed an issue with the Stripe Card Element field where certain payment failures are not handled correctly, preventing the form validation message from being displayed and leaving the entry status as "Processing".
+- Fixed a bug that can occur when the `gform_currency` filter is used to change the currency on a specific page.
+- Fixed a JavaScript error that occurs when the Submit Button Location setting is set to the "End of the last row" choice.
+
+### 6.0.2 | 2025-12-11
+- Added the $is_payment property to the Stripe Field class.
+- Fixed a PHP fatal error that can occur when using the gform_stripe_customer_after_create hook with the Stripe Card Element.
+- Fixed an issue where the card details merge tags are not populated when using the Stripe Card Element.
+
+### 6.0.1.0 | 2025-11-17
+- Updated the add-on to use the new [versioning system](https://docs.gravityforms.com/version-numbering/).
+- Fixed an issue where the cardholder name and billing address fields are not being sent to Stripe as part of the payment method when using the Stripe Card Element.
+- Fixed an issue where the Stripe receipt email is not being sent when using the Card Element.
+
 ### 6.0.0 | 2025-11-03
 - Added a confirmation to be displayed if the form submission times out while waiting for a Stripe Webhook to be received.
 - Updated the post payment action settings so that they are enabled by default when creating a Stripe feed.

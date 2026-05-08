@@ -23,6 +23,15 @@ class GF_Field_Stripe_CreditCard extends GF_Field {
 	public $type = 'stripe_creditcard';
 
 	/**
+	 * Indicates the field is used to capture payments.
+	 *
+	 * @since 6.1
+	 *
+	 * @var bool
+	 */
+	public $is_payment = true;
+
+	/**
 	 * Get field button title.
 	 *
 	 * @since 2.6

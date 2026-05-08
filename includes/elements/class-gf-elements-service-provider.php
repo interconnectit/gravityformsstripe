@@ -84,5 +84,11 @@ class Experimental_GF_Elements_Service_Provider extends GF_Service_Provider {
 
 		add_action( 'wp_ajax_nopriv_gfstripe_increase_error_count', array( $handler, 'ajax_increase_error_count' ) );
 		add_action( 'wp_ajax_gfstripe_increase_error_count', array( $handler, 'ajax_increase_error_count' ) );
+
+		add_action( 'wp_ajax_nopriv_gfstripe_update_entry_failed', array( $handler, 'ajax_update_entry_failed' ) );
+		add_action( 'wp_ajax_gfstripe_update_entry_failed', array( $handler, 'ajax_update_entry_failed' ) );
+
+		add_action( 'wp_ajax_nopriv_gfstripe_elements_get_country_code', array( $handler, 'ajax_get_country_code' ) );
+		add_action( 'wp_ajax_gfstripe_elements_get_country_code', array( $handler, 'ajax_get_country_code' ) );
 	}
 }

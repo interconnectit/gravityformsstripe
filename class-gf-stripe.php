@@ -56,7 +56,7 @@ class GFStripe extends GFPaymentAddOn {
 	 *
 	 * @var string $_min_gravityforms_version The minimum version required.
 	 */
-	protected $_min_gravityforms_version = '1.9.14.17';
+	protected $_min_gravityforms_version = '2.9.26';
 
 	/**
 	 * Defines the plugin slug.
@@ -518,7 +518,9 @@ class GFStripe extends GFPaymentAddOn {
 					'create_payment_intent_nonce'         => wp_create_nonce( 'gfstripe_create_payment_intent' ),
 					'create_subscription_nonce'           => wp_create_nonce( 'gfstripe_create_subscription' ),
 					'increase_error_count_nonce'          => wp_create_nonce( 'gfstripe_increase_error_count' ),
+					'update_entry_failed_nonce'           => wp_create_nonce( 'gfstripe_update_entry_failed' ),
 					'get_entry_nonce'                     => wp_create_nonce( 'gfstripe_get_entry' ),
+					'get_country_code_nonce'              => wp_create_nonce( 'gfstripe_get_country_code' ),
 					'handle_successful_entry_nonce'       => wp_create_nonce( 'gfstripe_handle_successful_entry' ),
 					'payment_timeout_message'             => esc_html__( 'This process is taking longer than expected. You will receive a confirmation via email when your payment is completed.', 'gravityformsstripe' ),
 					'processing_payment'                  => esc_html__( 'Processing payment...', 'gravityformsstripe' ),
@@ -3121,7 +3123,6 @@ class GFStripe extends GFPaymentAddOn {
 		add_filter( 'gform_field_css_class', array( $this, 'stripe_card_field_css_class' ), 10, 3 );
 		add_filter( 'gform_submission_values_pre_save', array( $this, 'stripe_card_submission_value_pre_save' ), 10, 3 );
 		add_filter( 'gform_shortcode_stripe_customer_portal_link', array( $this->get_billing_portal_handler(), 'stripe_customer_portal_link_shortcode' ), 10, 3 );
-
 		// Supports frontend feeds.
 		$this->_supports_frontend_feeds = true;
 

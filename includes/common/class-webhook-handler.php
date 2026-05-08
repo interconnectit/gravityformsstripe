@@ -111,6 +111,9 @@ class Webhook_Handler {
 					'entry_id'         => $entry['id'],
 				);
 
+				// Update the entry with the payment information if available.
+				$this->update_payment_details( $entry, rgars( $payment_intent, 'payment_method' ) );
+
 				break;
 
 			// Handle single payments with authorize only enabled.
@@ -133,7 +136,7 @@ class Webhook_Handler {
 					$action['abort_callback'] = true;
 				}
 
-				// Update the entry with the payment information.
+				// This ensures payment information is always updated. It is sometimes redundant (i.e. when handling payment_intent.succeeded events), but it ensures the entry is always updated.
 				$this->update_payment_details( $entry, rgars( $charge, 'payment_method_details' ) );
 
 				break;
@@ -233,6 +236,10 @@ class Webhook_Handler {
 						'amount'          => $this->get_recurring_amount( $subscription->id ),
 						'entry_id'        => $entry['id'],
 					);
+
+					// Update payment details.
+					$this->update_payment_details( $entry, rgars( $subscription, 'default_payment_method' ) );
+
 				} elseif ( $has_canceled ) {
 					$action += array(
 						'type'     => 'cancel_subscription',

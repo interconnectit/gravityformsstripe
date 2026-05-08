@@ -51,6 +51,25 @@ class Experimental_GF_Elements_Handler {
 	}
 
 	/**
+	 * AJAX action to get country code from country name.
+	 *
+	 * @since 6.1
+	 */
+	public function ajax_get_country_code() {
+		check_ajax_referer( 'gfstripe_get_country_code', 'nonce' );
+
+		$country = sanitize_text_field( rgpost( 'country' ) );
+		$code    = ! empty( $country ) ? \GF_Fields::get( 'address' )->get_country_code( $country ) : '';
+
+		// If code could not be found, return the country name (might be a code already).
+		if ( empty( $code ) ) {
+			$code = $country;
+		}
+
+		wp_send_json_success( array( 'code' => $code ) );
+	}
+
+	/**
 	 * AJAX action to create a payment intent.
 	 *
 	 * @since 6.0
@@ -81,6 +100,12 @@ class Experimental_GF_Elements_Handler {
 			'capture_method' => $this->addon->get_capture_method( $feed, $submission_data, $form, $entry ),
 			'metadata'       => $this->addon->get_stripe_meta_data( $feed, $entry, $form ),
 		);
+
+		// Adding receipt email if one was mapped.
+		$receipt_email = $this->addon->get_field_value( $form, $entry, rgars( $feed, 'meta/receipt_field' ) );
+		if ( ! empty( $receipt_email ) ) {
+			$args['receipt_email'] = $receipt_email;
+		}
 
 		// Adding entry id to metadata.
 		$args['metadata']['gf_entry_id'] = rgar( $entry, 'id' );
@@ -213,6 +238,30 @@ class Experimental_GF_Elements_Handler {
 		check_ajax_referer( 'gfstripe_increase_error_count', 'nonce' );
 
 		wp_send_json_success( $this->addon->get_card_error_count( true ) );
+	}
+
+	/**
+	 * AJAX action to mark an entry as failed.
+	 *
+	 * @since 6.0.3
+	 */
+	public function ajax_update_entry_failed() {
+		check_ajax_referer( 'gfstripe_update_entry_failed', 'nonce' );
+
+		$entry_id       = intval( rgpost( 'entry_id' ) );
+		$error_message  = esc_html__( 'Payment has failed. Error message: ', 'gravityformsstripe' ) . sanitize_text_field( rgpost( 'error_message' ) );
+
+		// Getting entry.
+		$entry = \GFAPI::get_entry( $entry_id );
+		if ( is_wp_error( $entry ) ) {
+			wp_send_json_error( array( 'message' => $entry->get_error_messages() ) );
+		}
+
+		// Marking entry as failed.
+		$this->addon->fail_payment( $entry, array( 'entry_id' => $entry['id'], 'note' => $error_message ) );
+
+		// Sending success reponse
+		wp_send_json_success();
 	}
 
 	/**
@@ -649,7 +698,7 @@ class Experimental_GF_Elements_Handler {
 	private function after_create_customer( $customer, $feed, $entry, $form ) {
 		if ( has_filter( 'gform_stripe_customer_after_create' ) ) {
 			// Log that filter will be executed.
-			$this->log_debug( __METHOD__ . '(): Executing functions hooked to gform_stripe_customer_after_create.' );
+			$this->addon->log_debug( __METHOD__ . '(): Executing functions hooked to gform_stripe_customer_after_create.' );
 
 			/**
 			 * Allow custom actions to be performed between the customer being created and subscribed to the plan.

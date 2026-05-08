@@ -12,7 +12,7 @@ Theme dependencies:
 - Gravity Forms Theme Foundation for the Stripe Add-On: theme-foundation.css
 
 Gravity Forms is a Rocketgenius project
-copyright 2008-2025 Rocketgenius Inc.
+copyright 2008-2026 Rocketgenius Inc.
 https://www.rocketgenius.com
 this may not be re-distributed without the
 express written permission of the author.
@@ -34,7 +34,6 @@ AND ANY CHANGES MADE HERE WILL BE OVERWRITTEN.
 			--gf-local-color: var(--gf-ctrl-color-focus);
 			--gf-local-outline-color: var(--gf-ctrl-outline-color-focus);
 			--gf-local-outline-width: var(--gf-ctrl-outline-width-focus);
-			--gf-local-shadow: var(--gf-ctrl-shadow-focus);
 		}
 
 .gform-theme--framework .gfield--type-stripe_creditcard-card .StripeElement--invalid {

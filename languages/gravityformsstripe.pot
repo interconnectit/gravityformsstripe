@@ -1,15 +1,15 @@
-# Copyright (C) 2025 Gravity Forms
+# Copyright (C) 2026 Gravity Forms
 # This file is distributed under the GPL-2.0+.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gravity Forms Stripe Add-On 6.0.0\n"
+"Project-Id-Version: Gravity Forms Stripe Add-On 6.0.3\n"
 "Report-Msgid-Bugs-To: https://gravityforms.com/support\n"
 "Last-Translator: Gravity Forms <support@gravityforms.com>\n"
 "Language-Team: Gravity Forms <support@gravityforms.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-11-03T16:07:52+00:00\n"
+"POT-Creation-Date: 2026-01-22T18:45:47+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: gravityformsstripe\n"
@@ -62,7 +62,7 @@ msgid "The payment gateway failed to process the request. Please use a different
 msgstr ""
 
 #: class-gf-stripe.php:425
-#: class-gf-stripe.php:8524
+#: class-gf-stripe.php:8525
 #: deprecated/class-gf-stripe.php:378
 #: deprecated/class-gf-stripe.php:8424
 msgid "We are not able to process your payment request at the moment. Please try again later."
@@ -163,290 +163,290 @@ msgstr ""
 msgid "Field ID"
 msgstr ""
 
-#: class-gf-stripe.php:523
+#: class-gf-stripe.php:525
 msgid "This process is taking longer than expected. You will receive a confirmation via email when your payment is completed."
 msgstr ""
 
-#: class-gf-stripe.php:524
+#: class-gf-stripe.php:526
 msgid "Processing payment..."
 msgstr ""
 
-#: class-gf-stripe.php:525
+#: class-gf-stripe.php:527
 msgid "Your payment has failed. Please update your payment method and try again."
 msgstr ""
 
-#: class-gf-stripe.php:526
+#: class-gf-stripe.php:528
 msgid "Try again"
 msgstr ""
 
-#: class-gf-stripe.php:527
+#: class-gf-stripe.php:529
 msgid "Please enter your card details."
 msgstr ""
 
-#: class-gf-stripe.php:528
+#: class-gf-stripe.php:530
 msgid "Could not create subscription."
 msgstr ""
 
-#: class-gf-stripe.php:529
+#: class-gf-stripe.php:531
 msgid "There was an error processing your request. Please try again later."
 msgstr ""
 
-#: class-gf-stripe.php:1193
+#: class-gf-stripe.php:1195
 #: deprecated/class-gf-stripe.php:1118
 msgid "Stripe API"
 msgstr ""
 
-#: class-gf-stripe.php:1203
+#: class-gf-stripe.php:1205
 #: deprecated/class-gf-stripe.php:1128
 msgid "Use Stripe's Payment Element."
 msgstr ""
 
 #. translators: variables are the markup to generate a link.
 #. translators: variables are the markup to generate a link.
-#: class-gf-stripe.php:1208
+#: class-gf-stripe.php:1210
 #: deprecated/class-gf-stripe.php:1133
 msgid "The Payment Element is Stripe's latest payment widget. It includes support for %1$sadditional payment methods%2$s and other improvements."
 msgstr ""
 
-#: class-gf-stripe.php:1215
+#: class-gf-stripe.php:1217
 #: deprecated/class-gf-stripe.php:1140
 msgid "Link Email Field"
 msgstr ""
 
-#: class-gf-stripe.php:1219
+#: class-gf-stripe.php:1221
 #: deprecated/class-gf-stripe.php:1144
 msgid "Select an Email Field"
 msgstr ""
 
 #. translators: variables are the markup to generate a link.
 #. translators: variables are the markup to generate a link.
-#: class-gf-stripe.php:1225
+#: class-gf-stripe.php:1227
 #: deprecated/class-gf-stripe.php:1150
 msgid "Link is a payment method that enables your customers to save their payment information so they can use it again on any site that uses Stripe Link. %1$sLearn more about Link%2$s."
 msgstr ""
 
 #. translators: variables are the markup to generate a link.
 #. translators: variables are the markup to generate a link.
-#: class-gf-stripe.php:1233
+#: class-gf-stripe.php:1235
 #: deprecated/class-gf-stripe.php:1158
 msgid "This option is disabled because Stripe is authenticated using API keys instead of Stripe Connect. To take advantage of additional payment methods, re-authenticate using Stripe Connect. %1$sLearn more about Stripe payment element%2$s."
 msgstr ""
 
-#: class-gf-stripe.php:1299
-#: class-gf-stripe.php:7445
+#: class-gf-stripe.php:1301
+#: class-gf-stripe.php:7446
 #: deprecated/class-gf-stripe.php:1224
 #: deprecated/class-gf-stripe.php:7191
 msgid "Access denied."
 msgstr ""
 
-#: class-gf-stripe.php:1346
-#: class-gf-stripe.php:2547
+#: class-gf-stripe.php:1348
+#: class-gf-stripe.php:2549
 #: deprecated/class-gf-stripe.php:1271
 #: deprecated/class-gf-stripe.php:2474
 msgid "Stripe Account"
 msgstr ""
 
-#: class-gf-stripe.php:1353
+#: class-gf-stripe.php:1355
 #: deprecated/class-gf-stripe.php:1278
 msgid "Payment Collection"
 msgstr ""
 
-#: class-gf-stripe.php:1359
+#: class-gf-stripe.php:1361
 #: deprecated/class-gf-stripe.php:1284
 msgid "Payment Collection Method"
 msgstr ""
 
-#: class-gf-stripe.php:1364
+#: class-gf-stripe.php:1366
 #: deprecated/class-gf-stripe.php:1289
 msgid "Stripe Field (Elements, SCA-ready)"
 msgstr ""
 
-#: class-gf-stripe.php:1366
+#: class-gf-stripe.php:1368
 #: deprecated/class-gf-stripe.php:1291
 msgid "Stripe Field"
 msgstr ""
 
-#: class-gf-stripe.php:1367
+#: class-gf-stripe.php:1369
 #: deprecated/class-gf-stripe.php:1292
 msgid "Select this option to use a Stripe field hosted by Stripe. The Stripe field can be embedded in a form and supports credit card payments as well as other payment methods such as Google Pay, Apple Pay and bank transfers."
 msgstr ""
 
 #. translators: 1. Open link tag 2. Close link tag
 #. translators: 1. Open link tag 2. Close link tag
-#: class-gf-stripe.php:1370
+#: class-gf-stripe.php:1372
 #: deprecated/class-gf-stripe.php:1295
 msgid "Stripe Field is ready for %1$sStrong Customer Authentication%2$s for European customers."
 msgstr ""
 
-#: class-gf-stripe.php:1374
+#: class-gf-stripe.php:1376
 #: deprecated/class-gf-stripe.php:1299
 msgid "Stripe Payment Form (Stripe Checkout, SCA-ready)"
 msgstr ""
 
-#: class-gf-stripe.php:1376
+#: class-gf-stripe.php:1378
 #: deprecated/class-gf-stripe.php:1301
 msgid "Stripe Payment Form"
 msgstr ""
 
-#: class-gf-stripe.php:1377
+#: class-gf-stripe.php:1379
 #: deprecated/class-gf-stripe.php:1302
 msgid "Select this option to collect all payment information in a separate page hosted by Stripe. This option is the simplest to implement since it doesn't require a Stripe field in your form. Stripe Checkout supports credit card payments as well as other payment methods such as Google Pay, Apple Pay and bank transfers."
 msgstr ""
 
 #. translators: 1. Open link tag 2. Close link tag
 #. translators: 1. Open link tag 2. Close link tag
-#: class-gf-stripe.php:1380
+#: class-gf-stripe.php:1382
 #: deprecated/class-gf-stripe.php:1305
 msgid "Stripe Checkout is ready for %1$sStrong Customer Authentication%2$s for European customers."
 msgstr ""
 
-#: class-gf-stripe.php:1419
-#: class-gf-stripe.php:1422
-#: class-gf-stripe.php:1774
+#: class-gf-stripe.php:1421
+#: class-gf-stripe.php:1424
+#: class-gf-stripe.php:1776
 #: deprecated/class-gf-stripe.php:1344
 #: deprecated/class-gf-stripe.php:1347
 #: deprecated/class-gf-stripe.php:1700
 msgid "Connected to Stripe as"
 msgstr ""
 
-#: class-gf-stripe.php:1422
+#: class-gf-stripe.php:1424
 #: deprecated/class-gf-stripe.php:1347
 msgid "The Stripe account this feed is currently connected to."
 msgstr ""
 
-#: class-gf-stripe.php:1426
+#: class-gf-stripe.php:1428
 #: deprecated/class-gf-stripe.php:1351
 msgid "Mode"
 msgstr ""
 
-#: class-gf-stripe.php:1431
+#: class-gf-stripe.php:1433
 #: deprecated/class-gf-stripe.php:1356
 msgid "Live"
 msgstr ""
 
-#: class-gf-stripe.php:1435
+#: class-gf-stripe.php:1437
 #: deprecated/class-gf-stripe.php:1360
 msgid "Test"
 msgstr ""
 
-#: class-gf-stripe.php:1482
-#: class-gf-stripe.php:1517
+#: class-gf-stripe.php:1484
+#: class-gf-stripe.php:1519
 #: deprecated/class-gf-stripe.php:1407
 #: deprecated/class-gf-stripe.php:1442
 msgid "Test Publishable Key"
 msgstr ""
 
-#: class-gf-stripe.php:1489
-#: class-gf-stripe.php:1522
+#: class-gf-stripe.php:1491
+#: class-gf-stripe.php:1524
 #: deprecated/class-gf-stripe.php:1414
 #: deprecated/class-gf-stripe.php:1447
 msgid "Test Secret Key"
 msgstr ""
 
-#: class-gf-stripe.php:1497
-#: class-gf-stripe.php:1527
+#: class-gf-stripe.php:1499
+#: class-gf-stripe.php:1529
 #: deprecated/class-gf-stripe.php:1422
 #: deprecated/class-gf-stripe.php:1452
 msgid "Live Publishable Key"
 msgstr ""
 
-#: class-gf-stripe.php:1504
-#: class-gf-stripe.php:1532
+#: class-gf-stripe.php:1506
+#: class-gf-stripe.php:1534
 #: deprecated/class-gf-stripe.php:1429
 #: deprecated/class-gf-stripe.php:1457
 msgid "Live Secret Key"
 msgstr ""
 
-#: class-gf-stripe.php:1544
+#: class-gf-stripe.php:1546
 #: deprecated/class-gf-stripe.php:1469
 msgid "Webhooks Enabled?"
 msgstr ""
 
-#: class-gf-stripe.php:1552
+#: class-gf-stripe.php:1554
 #: deprecated/class-gf-stripe.php:1477
 msgid "I have enabled the Gravity Forms webhook URL in my Stripe account."
 msgstr ""
 
-#: class-gf-stripe.php:1560
+#: class-gf-stripe.php:1562
 #: deprecated/class-gf-stripe.php:1485
 msgid "Test Signing Secret"
 msgstr ""
 
-#: class-gf-stripe.php:1569
+#: class-gf-stripe.php:1571
 #: deprecated/class-gf-stripe.php:1494
 msgid "Live Signing Secret"
 msgstr ""
 
-#: class-gf-stripe.php:1636
+#: class-gf-stripe.php:1638
 #: deprecated/class-gf-stripe.php:1561
 msgid "SSL Certificate Required"
 msgstr ""
 
 #. Translators: 1: Open link tag 2: Close link tag
 #. Translators: 1: Open link tag 2: Close link tag
-#: class-gf-stripe.php:1638
+#: class-gf-stripe.php:1640
 #: deprecated/class-gf-stripe.php:1563
 msgid "Make sure you have an SSL certificate installed and enabled, then %1$sclick here to reload the settings page%2$s."
 msgstr ""
 
-#: class-gf-stripe.php:1663
+#: class-gf-stripe.php:1665
 #: deprecated/class-gf-stripe.php:1588
 msgid "View Webhooks Instructions"
 msgstr ""
 
-#: class-gf-stripe.php:1664
+#: class-gf-stripe.php:1666
 #: deprecated/class-gf-stripe.php:1589
 msgid "Here is your Endpoint URL:"
 msgstr ""
 
-#: class-gf-stripe.php:1668
+#: class-gf-stripe.php:1670
 #: deprecated/class-gf-stripe.php:1593
 msgid "Copy Webhook URL"
 msgstr ""
 
-#: class-gf-stripe.php:1671
+#: class-gf-stripe.php:1673
 #: deprecated/class-gf-stripe.php:1596
 msgid "Copy URL"
 msgstr ""
 
-#: class-gf-stripe.php:1689
+#: class-gf-stripe.php:1691
 #: deprecated/class-gf-stripe.php:1614
 msgid "Select how payment information will be collected. You can select one of the Stripe hosted solutions (Stripe Credit Card or Stripe Checkout) which simplifies the PCI compliance process with Stripe."
 msgstr ""
 
 #. translators: Placeholders represent opening and closing link tags.
 #. translators: Placeholders represent opening and closing link tags.
-#: class-gf-stripe.php:1694
+#: class-gf-stripe.php:1696
 #: deprecated/class-gf-stripe.php:1619
 msgid "The Gravity Forms Credit Card Field was deprecated in the Stripe Add-On in version 3.4. Forms that are currently using this field will stop working in a future version. Refer to %1$sthis guide%2$s for more information about this change."
 msgstr ""
 
-#: class-gf-stripe.php:1743
+#: class-gf-stripe.php:1745
 #: deprecated/class-gf-stripe.php:1668
 msgid "Click here to authenticate with Stripe"
 msgstr ""
 
-#: class-gf-stripe.php:1753
+#: class-gf-stripe.php:1755
 #: deprecated/class-gf-stripe.php:1678
 msgid "You are currently logged in to Stripe using a deprecated authentication method."
 msgstr ""
 
 #. Translators: 1: Open strong tag 2: Close strong tag
 #. Translators: 1: Open strong tag 2: Close strong tag
-#: class-gf-stripe.php:1755
+#: class-gf-stripe.php:1757
 #: deprecated/class-gf-stripe.php:1680
 msgid "%1$sPlease login to your Stripe account via Stripe Connect using the button below.%2$s It is a more secure authentication method and will be required for upcoming features of the Stripe Add-on."
 msgstr ""
 
 #. translators: Placeholders represent wrapping link tag.
 #. translators: Placeholders represent wrapping link tag.
-#: class-gf-stripe.php:1760
+#: class-gf-stripe.php:1762
 #: deprecated/class-gf-stripe.php:1685
 msgid "%1$sLearn more%2$s about connecting with Stripe."
 msgstr ""
 
-#: class-gf-stripe.php:1780
-#: class-gf-stripe.php:1798
+#: class-gf-stripe.php:1782
+#: class-gf-stripe.php:1800
 #: deprecated/class-gf-stripe.php:1709
 #: deprecated/class-gf-stripe.php:1727
 msgid "Disconnect from Stripe"
@@ -454,387 +454,387 @@ msgstr ""
 
 #. translators: placeholder represents contextual target, either "feed" or "site".
 #. translators: placeholder represents contextual target, either "feed" or "site".
-#: class-gf-stripe.php:1793
+#: class-gf-stripe.php:1795
 #: deprecated/class-gf-stripe.php:1722
 msgid "Disconnect this %s only"
 msgstr ""
 
-#: class-gf-stripe.php:1795
+#: class-gf-stripe.php:1797
 #: deprecated/class-gf-stripe.php:1724
 msgid "Disconnect all Gravity Forms sites connected to this Stripe account"
 msgstr ""
 
-#: class-gf-stripe.php:1903
+#: class-gf-stripe.php:1905
 #: deprecated/class-gf-stripe.php:1832
 msgid "%1$s%2$s%3$s"
 msgstr ""
 
-#: class-gf-stripe.php:1918
+#: class-gf-stripe.php:1920
 #: deprecated/class-gf-stripe.php:1847
 msgid "Switch Accounts"
 msgstr ""
 
 #. Translators: 1. Open link tag. 2. Close link tag.
 #. Translators: 1. Open link tag. 2. Close link tag.
-#: class-gf-stripe.php:1934
+#: class-gf-stripe.php:1936
 #: deprecated/class-gf-stripe.php:1863
 msgid "Logo can be configured on %1$sStripe's branding page%2$s."
 msgstr ""
 
-#: class-gf-stripe.php:1995
+#: class-gf-stripe.php:1997
 #: deprecated/class-gf-stripe.php:1924
 msgid "Unable to connect to Stripe due to mismatched state."
 msgstr ""
 
-#: class-gf-stripe.php:2042
+#: class-gf-stripe.php:2044
 #: deprecated/class-gf-stripe.php:1971
 msgid "Unable to authenticate with Stripe."
 msgstr ""
 
-#: class-gf-stripe.php:2076
+#: class-gf-stripe.php:2078
 #: deprecated/class-gf-stripe.php:2005
 msgid "Capture Payment"
 msgstr ""
 
-#: class-gf-stripe.php:2077
+#: class-gf-stripe.php:2079
 #: deprecated/class-gf-stripe.php:2006
 msgid "Capturing payment"
 msgstr ""
 
 #. Translators: 1: Open link tag 2: Close link tag
 #. Translators: 1: Open link tag 2: Close link tag
-#: class-gf-stripe.php:2185
+#: class-gf-stripe.php:2187
 #: deprecated/class-gf-stripe.php:2112
 msgid "You are currently logged in to Stripe using a deprecated authentication method. %1$sRe-authenticate your Stripe account%2$s."
 msgstr ""
 
 #. translators: 1: Open strong tag, 2: Close strong tag, 3: Form title, 4: Open link tag, 5: Close link tag.
 #. translators: 1: Open strong tag, 2: Close strong tag, 3: Form title, 4: Open link tag, 5: Close link tag.
-#: class-gf-stripe.php:2257
+#: class-gf-stripe.php:2259
 #: deprecated/class-gf-stripe.php:2184
 msgid "%1$sImportant%2$s: The form %3$s is using a deprecated payment collection method for Stripe that will stop working in a future version. Take action now to continue collecting payments. %4$sLearn more.%5$s"
 msgstr ""
 
-#: class-gf-stripe.php:2366
+#: class-gf-stripe.php:2368
 #: deprecated/class-gf-stripe.php:2293
 msgid "You must add a Stripe Card field to your form before creating a feed. Let's go %sadd one%s!"
 msgstr ""
 
-#: class-gf-stripe.php:2391
+#: class-gf-stripe.php:2393
 #: deprecated/class-gf-stripe.php:2318
 msgid "Customer Information"
 msgstr ""
 
-#: class-gf-stripe.php:2400
-#: class-gf-stripe.php:2403
+#: class-gf-stripe.php:2402
+#: class-gf-stripe.php:2405
 #: deprecated/class-gf-stripe.php:2327
 #: deprecated/class-gf-stripe.php:2330
 msgid "Email"
 msgstr ""
 
-#: class-gf-stripe.php:2403
-#: class-gf-stripe.php:2582
+#: class-gf-stripe.php:2405
+#: class-gf-stripe.php:2584
 #: deprecated/class-gf-stripe.php:2330
 #: deprecated/class-gf-stripe.php:2509
 msgid "You can specify an email field and it will be sent to Stripe as the customer's email."
 msgstr ""
 
-#: class-gf-stripe.php:2407
+#: class-gf-stripe.php:2409
 #: deprecated/class-gf-stripe.php:2334
 msgid "Description"
 msgstr ""
 
-#: class-gf-stripe.php:2412
-#: class-gf-stripe.php:2415
+#: class-gf-stripe.php:2414
+#: class-gf-stripe.php:2417
 #: deprecated/class-gf-stripe.php:2339
 #: deprecated/class-gf-stripe.php:2342
 msgid "Coupon"
 msgstr ""
 
-#: class-gf-stripe.php:2415
+#: class-gf-stripe.php:2417
 #: deprecated/class-gf-stripe.php:2342
 msgid "Select which field contains the coupon code to be applied to the recurring charge(s). The coupon must also exist in your Stripe Dashboard."
 msgstr ""
 
-#: class-gf-stripe.php:2415
+#: class-gf-stripe.php:2417
 #: deprecated/class-gf-stripe.php:2342
 msgid "If you use Stripe Checkout, the coupon won't be applied to your first invoice."
 msgstr ""
 
-#: class-gf-stripe.php:2429
+#: class-gf-stripe.php:2431
 #: deprecated/class-gf-stripe.php:2356
 msgid "You will see this data when viewing a customer page."
 msgstr ""
 
-#: class-gf-stripe.php:2431
+#: class-gf-stripe.php:2433
 #: deprecated/class-gf-stripe.php:2358
 msgid "You will see this data when viewing a payment page."
 msgstr ""
 
-#: class-gf-stripe.php:2438
-#: class-gf-stripe.php:2442
+#: class-gf-stripe.php:2440
+#: class-gf-stripe.php:2444
 #: deprecated/class-gf-stripe.php:2365
 #: deprecated/class-gf-stripe.php:2369
 msgid "Metadata"
 msgstr ""
 
-#: class-gf-stripe.php:2442
+#: class-gf-stripe.php:2444
 #: deprecated/class-gf-stripe.php:2369
 msgid "You may send custom meta information to Stripe. A maximum of 50 custom keys may be sent. The key name must be 40 characters or less, and the mapped data will be truncated to 500 characters per requirements by Stripe. "
 msgstr ""
 
-#: class-gf-stripe.php:2456
+#: class-gf-stripe.php:2458
 #: deprecated/class-gf-stripe.php:2383
 msgid "Trial"
 msgstr ""
 
-#: class-gf-stripe.php:2459
+#: class-gf-stripe.php:2461
 #: deprecated/class-gf-stripe.php:2386
 msgid "Enable a trial period.  The user's recurring payment will not begin until after this trial period."
 msgstr ""
 
-#: class-gf-stripe.php:2466
+#: class-gf-stripe.php:2468
 #: deprecated/class-gf-stripe.php:2393
 msgid "Trial Period"
 msgstr ""
 
-#: class-gf-stripe.php:2472
-#: class-gf-stripe.php:2475
+#: class-gf-stripe.php:2474
+#: class-gf-stripe.php:2477
 #: deprecated/class-gf-stripe.php:2399
 #: deprecated/class-gf-stripe.php:2402
 msgid "days"
 msgstr ""
 
-#: class-gf-stripe.php:2483
-#: class-gf-stripe.php:2486
+#: class-gf-stripe.php:2485
+#: class-gf-stripe.php:2488
 #: deprecated/class-gf-stripe.php:2410
 #: deprecated/class-gf-stripe.php:2413
 msgid "Subscription Name"
 msgstr ""
 
-#: class-gf-stripe.php:2486
+#: class-gf-stripe.php:2488
 #: deprecated/class-gf-stripe.php:2413
 msgid "Enter a name for the subscription. It will be displayed on the payment form as well as the Stripe dashboard."
 msgstr ""
 
-#: class-gf-stripe.php:2496
+#: class-gf-stripe.php:2498
 #: deprecated/class-gf-stripe.php:2423
 msgid "Stripe Credit Card Field Settings"
 msgstr ""
 
-#: class-gf-stripe.php:2504
-#: class-gf-stripe.php:2505
+#: class-gf-stripe.php:2506
+#: class-gf-stripe.php:2507
 #: deprecated/class-gf-stripe.php:2431
 #: deprecated/class-gf-stripe.php:2432
 msgid "Billing Information"
 msgstr ""
 
-#: class-gf-stripe.php:2505
+#: class-gf-stripe.php:2507
 #: deprecated/class-gf-stripe.php:2432
 msgid "Map your Form Fields to the available listed fields. The address information will be sent to Stripe."
 msgstr ""
 
-#: class-gf-stripe.php:2517
+#: class-gf-stripe.php:2519
 #: deprecated/class-gf-stripe.php:2444
 msgid "Stripe Payment Form Settings"
 msgstr ""
 
-#: class-gf-stripe.php:2518
+#: class-gf-stripe.php:2520
 #: deprecated/class-gf-stripe.php:2445
 msgid "The following settings control information displayed on the Stripe hosted payment page that is displayed after the form is submitted."
 msgstr ""
 
-#: class-gf-stripe.php:2535
 #: class-gf-stripe.php:2537
+#: class-gf-stripe.php:2539
 #: deprecated/class-gf-stripe.php:2462
 #: deprecated/class-gf-stripe.php:2464
 msgid "Stripe Receipt"
 msgstr ""
 
-#: class-gf-stripe.php:2537
+#: class-gf-stripe.php:2539
 #: deprecated/class-gf-stripe.php:2464
 msgid "Stripe can send a receipt via email upon payment. Select an email field to enable this feature."
 msgstr ""
 
-#: class-gf-stripe.php:2571
+#: class-gf-stripe.php:2573
 #: deprecated/class-gf-stripe.php:2498
 msgid "Logo"
 msgstr ""
 
-#: class-gf-stripe.php:2576
-#: class-gf-stripe.php:2582
+#: class-gf-stripe.php:2578
+#: class-gf-stripe.php:2584
 #: deprecated/class-gf-stripe.php:2503
 #: deprecated/class-gf-stripe.php:2509
 msgid "Customer Email"
 msgstr ""
 
-#: class-gf-stripe.php:2586
 #: class-gf-stripe.php:2588
+#: class-gf-stripe.php:2590
 #: deprecated/class-gf-stripe.php:2513
 #: deprecated/class-gf-stripe.php:2515
 msgid "Billing Address"
 msgstr ""
 
-#: class-gf-stripe.php:2588
+#: class-gf-stripe.php:2590
 #: deprecated/class-gf-stripe.php:2515
 msgid "When enabled, Stripe Checkout will collect the customer's billing address for you."
 msgstr ""
 
-#: class-gf-stripe.php:2592
-#: class-gf-stripe.php:2785
-#: class-gf-stripe.php:2851
+#: class-gf-stripe.php:2594
+#: class-gf-stripe.php:2787
+#: class-gf-stripe.php:2853
 #: deprecated/class-gf-stripe.php:2519
 #: deprecated/class-gf-stripe.php:2712
 #: deprecated/class-gf-stripe.php:2778
 msgid "Enabled"
 msgstr ""
 
-#: class-gf-stripe.php:2596
+#: class-gf-stripe.php:2598
 #: deprecated/class-gf-stripe.php:2523
 msgid "Disabled"
 msgstr ""
 
-#: class-gf-stripe.php:2718
+#: class-gf-stripe.php:2720
 #: deprecated/class-gf-stripe.php:2645
 msgid "Do not send receipt"
 msgstr ""
 
-#: class-gf-stripe.php:2724
+#: class-gf-stripe.php:2726
 #: deprecated/class-gf-stripe.php:2651
 msgid "Do not set customer email"
 msgstr ""
 
-#: class-gf-stripe.php:2941
+#: class-gf-stripe.php:2943
 #: deprecated/class-gf-stripe.php:2868
 msgid "Please enter a valid number of days."
 msgstr ""
 
-#: class-gf-stripe.php:2995
+#: class-gf-stripe.php:2997
 #: deprecated/class-gf-stripe.php:2922
 msgid "A field has been mapped to a custom key without a name. Please enter a name for the custom key, remove the metadata item, or return the corresponding drop down to 'Select a Field'."
 msgstr ""
 
-#: class-gf-stripe.php:2998
+#: class-gf-stripe.php:3000
 #: deprecated/class-gf-stripe.php:2925
 msgid "The name of custom key %s is too long. Please shorten this to 40 characters or less."
 msgstr ""
 
-#: class-gf-stripe.php:3016
+#: class-gf-stripe.php:3018
 #: deprecated/class-gf-stripe.php:2943
 msgid "Please use the correct webhook signing secret, which should start with \"whsec_\"."
 msgstr ""
 
-#: class-gf-stripe.php:3033
+#: class-gf-stripe.php:3035
 #: deprecated/class-gf-stripe.php:2960
 msgid "day(s)"
 msgstr ""
 
-#: class-gf-stripe.php:3034
+#: class-gf-stripe.php:3036
 #: deprecated/class-gf-stripe.php:2961
 msgid "week(s)"
 msgstr ""
 
-#: class-gf-stripe.php:3035
+#: class-gf-stripe.php:3037
 #: deprecated/class-gf-stripe.php:2962
 msgid "month(s)"
 msgstr ""
 
-#: class-gf-stripe.php:3036
+#: class-gf-stripe.php:3038
 #: deprecated/class-gf-stripe.php:2963
 msgid "year(s)"
 msgstr ""
 
-#: class-gf-stripe.php:3081
+#: class-gf-stripe.php:3083
 #: deprecated/class-gf-stripe.php:3008
 msgid "Payment Pending"
 msgstr ""
 
-#: class-gf-stripe.php:3082
+#: class-gf-stripe.php:3084
 #: deprecated/class-gf-stripe.php:3009
 msgid "Payment Authorized"
 msgstr ""
 
-#: class-gf-stripe.php:3083
+#: class-gf-stripe.php:3085
 #: deprecated/class-gf-stripe.php:3010
 msgid "Payment Completed"
 msgstr ""
 
-#: class-gf-stripe.php:3084
+#: class-gf-stripe.php:3086
 #: deprecated/class-gf-stripe.php:3011
 msgid "Payment Refunded"
 msgstr ""
 
-#: class-gf-stripe.php:3085
+#: class-gf-stripe.php:3087
 #: deprecated/class-gf-stripe.php:3012
 msgid "Payment Failed"
 msgstr ""
 
-#: class-gf-stripe.php:3086
+#: class-gf-stripe.php:3088
 #: deprecated/class-gf-stripe.php:3013
 msgid "Subscription Created"
 msgstr ""
 
-#: class-gf-stripe.php:3087
+#: class-gf-stripe.php:3089
 #: deprecated/class-gf-stripe.php:3014
 msgid "Subscription Canceled"
 msgstr ""
 
-#: class-gf-stripe.php:3088
+#: class-gf-stripe.php:3090
 #: deprecated/class-gf-stripe.php:3015
 msgid "Subscription Payment Added"
 msgstr ""
 
-#: class-gf-stripe.php:3089
+#: class-gf-stripe.php:3091
 #: deprecated/class-gf-stripe.php:3016
 msgid "Subscription Payment Failed"
 msgstr ""
 
-#: class-gf-stripe.php:3528
-#: class-gf-stripe.php:3687
-#: class-gf-stripe.php:3728
+#: class-gf-stripe.php:3529
+#: class-gf-stripe.php:3688
+#: class-gf-stripe.php:3729
 #: deprecated/class-gf-stripe.php:3431
 #: deprecated/class-gf-stripe.php:3590
 #: deprecated/class-gf-stripe.php:3631
 msgid "Unknown"
 msgstr ""
 
-#: class-gf-stripe.php:3537
+#: class-gf-stripe.php:3538
 #: deprecated/class-gf-stripe.php:3440
 msgid "Card type (%s) is not supported. Please enter one of the supported credit cards."
 msgstr ""
 
 #. Translators: 1. Type of credit card.
 #. Translators: 1. Type of credit card.
-#: class-gf-stripe.php:3732
+#: class-gf-stripe.php:3733
 #: deprecated/class-gf-stripe.php:3635
 msgid "Card type (%1$s) is not supported. Please enter one of the supported credit cards."
 msgstr ""
 
-#: class-gf-stripe.php:3750
+#: class-gf-stripe.php:3751
 #: deprecated/class-gf-stripe.php:3653
 msgid "There was a problem with your submission."
 msgstr ""
 
-#: class-gf-stripe.php:3781
+#: class-gf-stripe.php:3782
 #: deprecated/class-gf-stripe.php:3684
 msgid "This form is not configured to collect payment."
 msgstr ""
 
-#: class-gf-stripe.php:3802
+#: class-gf-stripe.php:3803
 #: deprecated/class-gf-stripe.php:3705
 msgid "There was a problem with your submission. Please try again later."
 msgstr ""
 
-#: class-gf-stripe.php:3806
+#: class-gf-stripe.php:3807
 #: deprecated/class-gf-stripe.php:3709
 msgid "There was a problem with your submission:"
 msgstr ""
 
-#: class-gf-stripe.php:4011
-#: class-gf-stripe.php:4031
-#: class-gf-stripe.php:4073
-#: class-gf-stripe.php:5166
-#: class-gf-stripe.php:6023
+#: class-gf-stripe.php:4012
+#: class-gf-stripe.php:4032
+#: class-gf-stripe.php:4074
+#: class-gf-stripe.php:5167
+#: class-gf-stripe.php:6024
 #: deprecated/class-gf-stripe.php:3819
 #: deprecated/class-gf-stripe.php:3839
 #: deprecated/class-gf-stripe.php:3881
@@ -843,176 +843,176 @@ msgstr ""
 msgid "Your payment attempt has failed. Please enter your card details and try again."
 msgstr ""
 
-#: class-gf-stripe.php:4068
-#: class-gf-stripe.php:6034
+#: class-gf-stripe.php:4069
+#: class-gf-stripe.php:6035
 #: deprecated/class-gf-stripe.php:3876
 #: deprecated/class-gf-stripe.php:5842
 msgid "This payment might require 3D Secure authentication, please wait while we communicate with Stripe."
 msgstr ""
 
-#: class-gf-stripe.php:4075
+#: class-gf-stripe.php:4076
 #: deprecated/class-gf-stripe.php:3883
 msgid "The payment has been canceled"
 msgstr ""
 
-#: class-gf-stripe.php:4230
+#: class-gf-stripe.php:4231
 #: deprecated/class-gf-stripe.php:4038
 msgid "Payment with Discounts"
 msgstr ""
 
-#: class-gf-stripe.php:4302
+#: class-gf-stripe.php:4303
 #: deprecated/class-gf-stripe.php:4110
 msgid "Setup Fee"
 msgstr ""
 
-#: class-gf-stripe.php:4389
+#: class-gf-stripe.php:4390
 #: deprecated/class-gf-stripe.php:4197
 msgid "Unable to create Stripe Checkout session."
 msgstr ""
 
-#: class-gf-stripe.php:4765
+#: class-gf-stripe.php:4766
 #: deprecated/class-gf-stripe.php:4573
 msgid "Cannot get payment intent."
 msgstr ""
 
-#: class-gf-stripe.php:4777
+#: class-gf-stripe.php:4778
 #: deprecated/class-gf-stripe.php:4585
 msgid "Cannot get payment intent data."
 msgstr ""
 
-#: class-gf-stripe.php:4795
+#: class-gf-stripe.php:4796
 #: deprecated/class-gf-stripe.php:4603
 msgid "Cannot update payment intent data."
 msgstr ""
 
-#: class-gf-stripe.php:4830
+#: class-gf-stripe.php:4831
 #: deprecated/class-gf-stripe.php:4638
 msgid "Cannot capture payment intent data."
 msgstr ""
 
-#: class-gf-stripe.php:4836
+#: class-gf-stripe.php:4837
 #: deprecated/class-gf-stripe.php:4644
 msgid "Cannot capture the payment; the payment intent status is "
 msgstr ""
 
-#: class-gf-stripe.php:4853
-#: class-gf-stripe.php:4888
+#: class-gf-stripe.php:4854
+#: class-gf-stripe.php:4889
 #: deprecated/class-gf-stripe.php:4661
 #: deprecated/class-gf-stripe.php:4696
 msgid "Unable to capture the charge."
 msgstr ""
 
-#: class-gf-stripe.php:4872
+#: class-gf-stripe.php:4873
 #: deprecated/class-gf-stripe.php:4680
 msgid "Unable to save the charge."
 msgstr ""
 
-#: class-gf-stripe.php:4942
+#: class-gf-stripe.php:4943
 #: deprecated/class-gf-stripe.php:4750
 msgid "Failed to get the customer ID from Stripe."
 msgstr ""
 
-#: class-gf-stripe.php:5462
-#: class-gf-stripe.php:6592
+#: class-gf-stripe.php:5463
+#: class-gf-stripe.php:6593
 #: deprecated/class-gf-stripe.php:5270
 #: deprecated/class-gf-stripe.php:6372
 msgid "Subscription payment has been paid. Amount: %s. Subscription Id: %s"
 msgstr ""
 
-#: class-gf-stripe.php:6202
+#: class-gf-stripe.php:6203
 #: deprecated/class-gf-stripe.php:6001
 msgid "Unable to authorize card. No response from Stripe.js."
 msgstr ""
 
-#: class-gf-stripe.php:6553
-#: class-gf-stripe.php:6632
+#: class-gf-stripe.php:6554
+#: class-gf-stripe.php:6633
 #: deprecated/class-gf-stripe.php:6333
 #: deprecated/class-gf-stripe.php:6412
 msgid "Subscription line item not found in request"
 msgstr ""
 
-#: class-gf-stripe.php:6664
-#: class-gf-stripe.php:6692
+#: class-gf-stripe.php:6665
+#: class-gf-stripe.php:6693
 #: deprecated/class-gf-stripe.php:6444
 #: deprecated/class-gf-stripe.php:6472
 msgid "Invalid Checkout Session"
 msgstr ""
 
-#: class-gf-stripe.php:6859
+#: class-gf-stripe.php:6860
 #: deprecated/class-gf-stripe.php:6636
 msgid "Entry %d was not processed by feed %d. Webhook cannot be processed."
 msgstr ""
 
-#: class-gf-stripe.php:6876
+#: class-gf-stripe.php:6877
 #: deprecated/class-gf-stripe.php:6653
 msgid "Entry for %s id: %s was not found. Webhook cannot be processed."
 msgstr ""
 
-#: class-gf-stripe.php:6962
+#: class-gf-stripe.php:6963
 #: deprecated/class-gf-stripe.php:6734
 msgid "Invalid request. Webhook could not be processed."
 msgstr ""
 
-#: class-gf-stripe.php:6968
+#: class-gf-stripe.php:6969
 #: deprecated/class-gf-stripe.php:6740
 msgid "Test webhook succeeded. Your Stripe Account and Stripe Add-On are configured correctly to process webhooks."
 msgstr ""
 
-#: class-gf-stripe.php:7525
+#: class-gf-stripe.php:7526
 #: deprecated/class-gf-stripe.php:7271
 msgid "Setup fee has been paid."
 msgstr ""
 
-#: class-gf-stripe.php:7527
+#: class-gf-stripe.php:7528
 #: deprecated/class-gf-stripe.php:7273
 msgid "Trial has been paid."
 msgstr ""
 
-#: class-gf-stripe.php:7729
+#: class-gf-stripe.php:7730
 #: deprecated/class-gf-stripe.php:7475
 msgid "You're being redirected to the hosted Checkout page on Stripe..."
 msgstr ""
 
-#: class-gf-stripe.php:7792
+#: class-gf-stripe.php:7793
 #: deprecated/class-gf-stripe.php:7538
-#: includes/elements/class-gf-elements-handler.php:742
+#: includes/elements/class-gf-elements-handler.php:791
 msgid "Entry ID: %d"
 msgstr ""
 
-#: class-gf-stripe.php:7796
+#: class-gf-stripe.php:7797
 #: deprecated/class-gf-stripe.php:7542
-#: includes/elements/class-gf-elements-handler.php:746
+#: includes/elements/class-gf-elements-handler.php:795
 msgid "Product: %s"
 msgid_plural "Products: %s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: class-gf-stripe.php:7962
+#: class-gf-stripe.php:7963
 #: deprecated/class-gf-stripe.php:7708
 msgid "Address"
 msgstr ""
 
-#: class-gf-stripe.php:7968
+#: class-gf-stripe.php:7969
 #: deprecated/class-gf-stripe.php:7714
 msgid "Address 2"
 msgstr ""
 
-#: class-gf-stripe.php:7974
+#: class-gf-stripe.php:7975
 #: deprecated/class-gf-stripe.php:7720
 msgid "City"
 msgstr ""
 
-#: class-gf-stripe.php:7980
+#: class-gf-stripe.php:7981
 #: deprecated/class-gf-stripe.php:7726
 msgid "State"
 msgstr ""
 
-#: class-gf-stripe.php:7986
+#: class-gf-stripe.php:7987
 #: deprecated/class-gf-stripe.php:7732
 msgid "Zip"
 msgstr ""
 
-#: class-gf-stripe.php:7992
+#: class-gf-stripe.php:7993
 #: deprecated/class-gf-stripe.php:7738
 msgid "Country"
 msgstr ""
@@ -1021,83 +1021,83 @@ msgstr ""
 #. translators: PaymentIntent status.
 #. translators: PaymentIntent status.
 #. translators: PaymentIntent status.
-#: class-gf-stripe.php:8175
-#: class-gf-stripe.php:8220
+#: class-gf-stripe.php:8176
+#: class-gf-stripe.php:8221
 #: deprecated/class-gf-stripe.php:8075
 #: deprecated/class-gf-stripe.php:8120
 msgid "PaymentIntent status: %s is invalid."
 msgstr ""
 
-#: class-gf-stripe.php:8240
-#: class-gf-stripe.php:8325
+#: class-gf-stripe.php:8241
+#: class-gf-stripe.php:8326
 #: deprecated/class-gf-stripe.php:8140
 #: deprecated/class-gf-stripe.php:8225
 msgid "Unable to find entry."
 msgstr ""
 
-#: class-gf-stripe.php:8247
-#: class-gf-stripe.php:8332
+#: class-gf-stripe.php:8248
+#: class-gf-stripe.php:8333
 #: deprecated/class-gf-stripe.php:8147
 #: deprecated/class-gf-stripe.php:8232
 msgid "Unable to find payment feed."
 msgstr ""
 
-#: class-gf-stripe.php:8253
+#: class-gf-stripe.php:8254
 #: deprecated/class-gf-stripe.php:8153
 msgid "Could not initialize Stripe API."
 msgstr ""
 
-#: class-gf-stripe.php:8350
+#: class-gf-stripe.php:8351
 #: deprecated/class-gf-stripe.php:8250
 msgid "Unable to find payment on Stripe"
 msgstr ""
 
-#: class-gf-stripe.php:8558
+#: class-gf-stripe.php:8559
 #: deprecated/class-gf-stripe.php:8458
 msgid "Unnamed account"
 msgstr ""
 
-#: class-gf-stripe.php:8583
+#: class-gf-stripe.php:8584
 #: deprecated/class-gf-stripe.php:8483
 msgid "Could not retrieve payment information from Stripe."
 msgstr ""
 
-#: class-gf-stripe.php:8591
+#: class-gf-stripe.php:8592
 #: deprecated/class-gf-stripe.php:8491
 msgid "Payment has already been captured."
 msgstr ""
 
-#: class-gf-stripe.php:8602
+#: class-gf-stripe.php:8603
 #: deprecated/class-gf-stripe.php:8502
 msgid "Unable to capture payment"
 msgstr ""
 
-#: class-gf-stripe.php:8613
+#: class-gf-stripe.php:8614
 #: deprecated/class-gf-stripe.php:8513
 msgid "Payment captured successfully."
 msgstr ""
 
-#: class-gf-stripe.php:8660
+#: class-gf-stripe.php:8661
 #: deprecated/class-gf-stripe.php:8560
 msgid "Feed associated with entry could not be found."
 msgstr ""
 
-#: class-gf-stripe.php:8695
+#: class-gf-stripe.php:8696
 #: deprecated/class-gf-stripe.php:8595
 msgid "Refund Payment"
 msgstr ""
 
-#: class-gf-stripe.php:8696
+#: class-gf-stripe.php:8697
 #: deprecated/class-gf-stripe.php:8596
 msgid "Sending refund request"
 msgstr ""
 
-#: class-gf-stripe.php:8721
+#: class-gf-stripe.php:8722
 #: deprecated/class-gf-stripe.php:8621
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:73
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:318
-#: includes/class-gf-field-stripe-creditcard.php:73
-#: includes/class-gf-field-stripe-creditcard.php:318
+#: includes/class-gf-field-stripe-creditcard.php:82
+#: includes/class-gf-field-stripe-creditcard.php:327
 msgid "Cardholder Name"
 msgstr ""
 
@@ -1153,91 +1153,91 @@ msgid "Checkout Sessions cannot be updated."
 msgstr ""
 
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:33
-#: includes/class-gf-field-stripe-creditcard.php:33
+#: includes/class-gf-field-stripe-creditcard.php:42
 msgid "Stripe"
 msgstr ""
 
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:57
-#: includes/class-gf-field-stripe-creditcard.php:57
+#: includes/class-gf-field-stripe-creditcard.php:66
 msgid "Collects payments securely via Stripe payment gateway."
 msgstr ""
 
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:73
-#: includes/class-gf-field-stripe-creditcard.php:73
+#: includes/class-gf-field-stripe-creditcard.php:82
 msgid "Credit Card"
 msgstr ""
 
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:73
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:313
-#: includes/class-gf-field-stripe-creditcard.php:73
-#: includes/class-gf-field-stripe-creditcard.php:313
+#: includes/class-gf-field-stripe-creditcard.php:82
+#: includes/class-gf-field-stripe-creditcard.php:322
 msgid "Card Details"
 msgstr ""
 
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:73
-#: includes/class-gf-field-stripe-creditcard.php:73
+#: includes/class-gf-field-stripe-creditcard.php:82
 msgid "Card Type"
 msgstr ""
 
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:75
-#: includes/class-gf-field-stripe-creditcard.php:75
+#: includes/class-gf-field-stripe-creditcard.php:84
 msgid "A form can only contain one Stripe field."
 msgstr ""
 
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:238
-#: includes/class-gf-field-stripe-creditcard.php:238
+#: includes/class-gf-field-stripe-creditcard.php:247
 msgid "Cardholder name is required."
 msgstr ""
 
 #. translators: 1. Open div tag 2. Close div tag
 #. translators: 1. Open div tag 2. Close div tag
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:354
-#: includes/class-gf-field-stripe-creditcard.php:354
+#: includes/class-gf-field-stripe-creditcard.php:363
 msgid "Incompatible Payment Collection Method%1$sTo use the Stripe field, set your Payment Collection Method to Stripe Field, or to continue using the Stripe Payment Form (Stripe Checkout), remove the Stripe field.%2$s"
 msgstr ""
 
 #. translators: 1. Open div tag 2. Close div tag
 #. translators: 1. Open div tag 2. Close div tag
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:354
-#: includes/class-gf-field-stripe-creditcard.php:354
+#: includes/class-gf-field-stripe-creditcard.php:363
 msgid "%1$sIncompatible Payment Collection Method: To use the Stripe field, set your Payment Collection Method to Stripe Field, or to continue using the Stripe Payment Form (Stripe Checkout), remove the Stripe field.%2$s"
 msgstr ""
 
 #. translators: 1. Open div tag 2. Close div tag
 #. translators: 1. Open div tag 2. Close div tag
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:360
-#: includes/class-gf-field-stripe-creditcard.php:360
+#: includes/class-gf-field-stripe-creditcard.php:369
 msgid "Feed Required%1$sTo use the Stripe field, please create a Stripe feed for this form.%2$s"
 msgstr ""
 
 #. translators: 1. Open div tag 2. Close div tag
 #. translators: 1. Open div tag 2. Close div tag
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:360
-#: includes/class-gf-field-stripe-creditcard.php:360
+#: includes/class-gf-field-stripe-creditcard.php:369
 msgid "%1$sFeed Required: To use the Stripe field, please create a Stripe feed for this form.%2$s"
 msgstr ""
 
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:423
-#: includes/class-gf-field-stripe-creditcard.php:428
+#: includes/class-gf-field-stripe-creditcard.php:437
 msgid "Link login"
 msgstr ""
 
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:447
-#: includes/class-gf-field-stripe-creditcard.php:452
+#: includes/class-gf-field-stripe-creditcard.php:461
 msgid "This field requires additional configuration"
 msgstr ""
 
 #. translators: 1. Open div tag 2. Close div tag 3. Open link tag 4. Close link tag
 #. translators: 1. Open div tag 2. Close div tag 3. Open link tag 4. Close link tag
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:484
-#: includes/class-gf-field-stripe-creditcard.php:489
+#: includes/class-gf-field-stripe-creditcard.php:498
 msgid "Incompatible Payment Collection Method%1$s To use the Stripe field, set your %3$sPayment Collection Method%4$s to Stripe Field, or to continue using the Stripe Payment Form (Stripe Checkout), remove the Stripe field.%2$s"
 msgstr ""
 
 #. translators: 1. Open div tag 2. Close div tag 3. Open link tag 4. Close link tag
 #. translators: 1. Open div tag 2. Close div tag 3. Open link tag 4. Close link tag
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:502
-#: includes/class-gf-field-stripe-creditcard.php:507
+#: includes/class-gf-field-stripe-creditcard.php:516
 msgid "Feed Required%1$s To use the Stripe field, please create a %3$sStripe feed%4$s for this form.%2$s"
 msgstr ""
 
@@ -1250,40 +1250,40 @@ msgid "CVC"
 msgstr ""
 
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:537
-#: includes/class-gf-field-stripe-creditcard.php:538
+#: includes/class-gf-field-stripe-creditcard.php:547
 msgid "Card Number"
 msgstr ""
 
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:588
-#: includes/class-gf-field-stripe-creditcard.php:589
+#: includes/class-gf-field-stripe-creditcard.php:598
 msgid "This page is unsecured. Do not enter a real credit card number! Use this field only for testing purposes. "
 msgstr ""
 
 #. translators: 1. Open div tag 2. Close div tag 3. Open link tag 4. Close link tag
 #. translators: 1. Open div tag 2. Close div tag 3. Open link tag 4. Close link tag
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:786
-#: includes/class-gf-field-stripe-creditcard.php:787
+#: includes/class-gf-field-stripe-creditcard.php:796
 msgid "Configuration Required%1$sTo use the Stripe field, please configure your %3$sStripe Settings%4$s.%2$s"
 msgstr ""
 
 #. translators: 1. Open div tag 2. Close div tag 3. Open link tag 4. Close link tag
 #. translators: 1. Open div tag 2. Close div tag 3. Open link tag 4. Close link tag
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:786
-#: includes/class-gf-field-stripe-creditcard.php:787
+#: includes/class-gf-field-stripe-creditcard.php:796
 msgid "%1$sConfiguration Required: To use the Stripe field, please configure your %3$sStripe Settings%4$s.%2$s"
 msgstr ""
 
 #. translators: 1. Open div tag 2. Close div tag 3. Open link tag 4. Close link tag
 #. translators: 1. Open div tag 2. Close div tag 3. Open link tag 4. Close link tag
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:789
-#: includes/class-gf-field-stripe-creditcard.php:790
+#: includes/class-gf-field-stripe-creditcard.php:799
 msgid "Configuration Required%1$sPlease check your %3$sStripe API Settings%4$s. Your Publishable Key is empty.%2$s"
 msgstr ""
 
 #. translators: 1. Open div tag 2. Close div tag 3. Open link tag 4. Close link tag
 #. translators: 1. Open div tag 2. Close div tag 3. Open link tag 4. Close link tag
 #: deprecated/includes/class-gf-field-stripe-creditcard.php:789
-#: includes/class-gf-field-stripe-creditcard.php:790
+#: includes/class-gf-field-stripe-creditcard.php:799
 msgid "%1$sConfiguration Required: Please check your %3$sStripe API Settings%4$s. Your Publishable Key is empty.%2$s"
 msgstr ""
 
@@ -1404,27 +1404,31 @@ msgstr ""
 msgid "Manage subscription"
 msgstr ""
 
-#: includes/common/class-webhook-handler.php:191
+#: includes/common/class-webhook-handler.php:194
 msgid "Failed to authorize card for future subscription payments."
 msgstr ""
 
-#: includes/elements/class-gf-elements-handler.php:338
+#: includes/elements/class-gf-elements-handler.php:252
+msgid "Payment has failed. Error message: "
+msgstr ""
+
+#: includes/elements/class-gf-elements-handler.php:387
 msgid "The process of completing your payment is taking longer than expected. Contact us if you have any questions or concerns."
 msgstr ""
 
-#: includes/elements/class-gf-elements-handler.php:394
+#: includes/elements/class-gf-elements-handler.php:443
 msgid "Error retrieving subscription data."
 msgstr ""
 
-#: includes/elements/class-gf-elements-handler.php:400
+#: includes/elements/class-gf-elements-handler.php:449
 msgid "Error retrieving customer ID."
 msgstr ""
 
-#: includes/elements/class-gf-elements-handler.php:420
+#: includes/elements/class-gf-elements-handler.php:469
 msgid "Error retrieving product."
 msgstr ""
 
-#: includes/elements/class-gf-elements-handler.php:793
+#: includes/elements/class-gf-elements-handler.php:842
 msgid "Invalid coupon code."
 msgstr ""
 
